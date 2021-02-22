@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Objects</title>
+    <script>
+        var student = {
+            Roll_No: "TCOD05",
+            Name: "Mayur Attarde",
+            Address: "India",
+            salary: 1200000
+        };
+        console.log("Student => ", student);
+        var newStudent = JSON.parse(JSON.stringify(student));
+        console.log("New Student=> ", newStudent);
+        console.log("---------After modification----------");
+        newStudent.Name = "Vicky";
+        console.log("Student=> ", student);
+        console.log("New Student=> ", newStudent);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
